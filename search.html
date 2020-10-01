@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/search.css" />
+    <title>Restaurant Manager</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="search.html">Search</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content-box">
+        <div class="grid-container">
+          <div class="grid-item" style="display: flex; flex-direction: row;">
+            <div style="width: 90%; align-items: center;">
+              <input type="text" id="searchfood" placeholder="Search by Favorite Food" />
+            </div>
+            <div style="width: 10%; align-items: center;">
+              <button class="full-btn" i type="submit">
+                &#128270;
+              </button>
+            </div>
+          </div>
+          <div class="grid-item" style="display: flex; flex-direction: row;">
+            <div style="width: 90%; align-items: center;">
+              <input type="text" id="searchmail" placeholder="Search by Email" />
+            </div>
+            <div style="width: 10%; align-items: center;">
+              <button class="full-btn" type="submit">&#128270;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 80%; color: white" id="view-box">
+        
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <p class="text-center">&copy; 2020 Restaurant Manager</p>
+      </div>
+      <script src="js/search.js"></script>
+    </footer>
+  </body>
+</html>

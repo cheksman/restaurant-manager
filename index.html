@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Restaurant Manager</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="search.html">Search</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content-box">
+        <div id="notificationBox6" >
+          <p class="text-center error-color" id="error"></p>
+          
+        </div>
+        <div>
+          <h1 class="text-center">Restaurant Manager</h1>
+        </div>
+          <div class="grid-container">
+            <div class="name-container">
+              <div class="grid-10">
+                <label for="title">Title</label>
+                <select name="title" id="title">
+                  <option value="Mr">Mr</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Mrs">Mrs</option>
+                </select>
+              </div>
+
+              <div class="grid-45">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" />
+              </div>
+            </div>
+
+            <div class="grid-45-2">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" />
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="grid-item">
+              <label for="phone">Phone Number</label>
+              <input type="number" name="phone" id="phone" />
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <label for="occupation">Occupation</label>
+              <input type="text" name="occupation" id="occupation" />
+            </div>
+            <div class="grid-item">
+              <label for="preference">Favorite Foods</label>
+              <input type="text" name="preference" id="preference" />
+              <p>
+                <strong style="color: red">Note:</strong> Seperate foods with
+                comma
+              </p>
+            </div>
+          </div>
+          <div style="padding: 0.5rem">
+            <button class="full-btn" onclick="getFormValues()">SAVE DATA</button>
+          </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <p class="text-center">&copy; 2020 Restaurant Manager</p>
+      </div>
+      <script src="js/main.js"></script>
+    </footer>
+  </body>
+</html>
